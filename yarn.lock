@@ -67,7 +67,7 @@
     shelljs "^0.8.1"
     through2 "^3.0.1"
 
-"@ckeditor/ckeditor5-dev-webpack-plugin@^23.4.0":
+"@ckeditor/ckeditor5-dev-webpack-plugin@^23.5.1":
   version "23.5.1"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-dev-webpack-plugin/-/ckeditor5-dev-webpack-plugin-23.5.1.tgz#b2b80ee378ae33d518bd08a0be05290d3eaf71ce"
   integrity sha512-73RqbAJkZMMNRFnaZD8jpsOKbf7chWPxU0aivncB5a9jTrwiip1qESJgoZf9CcN3hNGEhkRueOgvJkbQLDNBEA==
