@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--
-	Copyright (c) 2014-2020, CKSource - Frederico Knabben. All rights reserved.
+	Copyright (c) 2014-2021, CKSource - Frederico Knabben. All rights reserved.
 	This file is licensed under the terms of the MIT License (see LICENSE.md).
 -->
 
@@ -96,7 +96,7 @@
 		<p><a href="https://ckeditor.com/ckeditor-5/" target="_blank" rel="noopener">CKEditor 5</a>
 			– Rich text editor of tomorrow, available today
 		</p>
-		<p>Copyright © 2003-2020,
+		<p>Copyright © 2003-2021,
 			<a href="https://cksource.com/" target="_blank" rel="noopener">CKSource</a>
 			– Frederico Knabben. All rights reserved.
 		</p>
@@ -105,45 +105,37 @@
 	<script>ClassicEditor
 			.create( document.querySelector( '.editor' ), {
 				
-				// toolbar: {
-				// 	items: [
-				// 		'heading',
-				// 		'|',
-				// 		'bold',
-				// 		'italic',
-				// 		'link',
-				// 		'bulletedList',
-				// 		'numberedList',
-				// 		'|',
-				// 		'indent',
-				// 		'outdent',
-				// 		'|',
-				// 		'imageUpload',
-				// 		'blockQuote',
-				// 		'insertTable',
-				// 		'undo',
-				// 		'redo',
-				// 		'fontSize',
-				// 		'fontColor',
-				// 		'fontBackgroundColor'
-				// 	]
-				// },
-				// language: 'zh-cn',
-				// image: {
-				// 	toolbar: [
-				// 		'imageTextAlternative',
-				// 		'imageStyle:full',
-				// 		'imageStyle:side'
-				// 	]
-				// },
-				// table: {
-				// 	contentToolbar: [
-				// 		'tableColumn',
-				// 		'tableRow',
-				// 		'mergeTableCells'
-				// 	]
-				// },
-				licenseKey: '',
+			  toolbar: {
+    items: [
+      "heading",
+      "|",
+      "bold",
+      "italic",
+      "link",
+      "bulletedList",
+      "numberedList",
+      "|",
+      "indent",
+      "outdent",
+      "|",
+      "insertImage",
+      "blockQuote",
+      "insertTable",
+      "undo",
+      "redo",
+      "fontSize",
+      "fontColor",
+      "fontBackgroundColor",
+      "mediaEmbed",
+    ],
+  },
+  language: "zh-cn",
+  image: {
+    toolbar: ["imageTextAlternative", "imageStyle:full", "imageStyle:side"],
+  },
+  table: {
+    contentToolbar: ["tableColumn", "tableRow", "mergeTableCells"],
+  },
 				
 			} )
 			.then( editor => {
@@ -160,7 +152,7 @@
 			.catch( error => {
 				console.error( 'Oops, something went wrong!' );
 				console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
-				console.warn( 'Build id: yd5mrly3p0bn-cvf49rf63czj' );
+				console.warn( 'Build id: c6kmaz26sgd7-fpd9vaz9sft9' );
 				console.error( error );
 			} );
 	</script>

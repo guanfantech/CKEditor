@@ -1,5 +1,5 @@
 /**
- * @license Copyright (c) 2014-2020, CKSource - Frederico Knabben. All rights reserved.
+ * @license Copyright (c) 2014-2021, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
@@ -48,7 +48,8 @@ module.exports = {
 		new CKEditorWebpackPlugin( {
 			// UI language. Language codes follow the https://en.wikipedia.org/wiki/ISO_639-1 format.
 			// When changing the built-in language, remember to also change it in the editor's configuration (src/ckeditor.js).
-			language: 'zh-cn',
+			language: 'zh',
+			additionalLanguages: 'all'
 		} ),
 		new webpack.BannerPlugin( {
 			banner: bundler.getLicenseBanner(),
@@ -75,13 +76,18 @@ module.exports = {
 						}
 					},
 					{
+						loader: 'css-loader'
+					},
+					{
 						loader: 'postcss-loader',
-						options: styles.getPostCssConfig( {
-							themeImporter: {
-								themePath: require.resolve( '@ckeditor/ckeditor5-theme-lark' )
-							},
-							minify: true
-						} )
+						options: {
+							postcssOptions: styles.getPostCssConfig( {
+								themeImporter: {
+									themePath: require.resolve( '@ckeditor/ckeditor5-theme-lark' )
+								},
+								minify: true
+							} )
+						}
 					},
 				]
 			}
