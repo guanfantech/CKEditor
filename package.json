@@ -2,7 +2,7 @@
   "name": "@ckeditor/ckeditor5-custom-build",
   "author": "CKSource",
   "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "SEE LICENSE IN LICENSE.md",
   "private": true,
   "keywords": [
@@ -59,6 +59,7 @@
   },
   "dependencies": {
     "@ckeditor/ckeditor5-core": "^22.0.0",
+    "@ckeditor/ckeditor5-media-embed": "^24.0.0",
     "@ckeditor/ckeditor5-ui": "^22.0.0"
   }
 }
